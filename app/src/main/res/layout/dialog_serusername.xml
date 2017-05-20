@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="200dp"
+    android:background="@drawable/rotate_gradient_background">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="200dp">
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName"
+            android:ems="10"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true"
+            android:id="@+id/tv_usename"
+            android:theme="@style/AppTheme"
+            android:paddingLeft="32dp"
+            android:layout_centerInParent="true"
+            android:textColor="@color/white"
+            android:hint="username"
+            android:textColorHint="@color/white_gray" />
+
+        <TextView
+            android:text="\@"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView5"
+            android:layout_toLeftOf="@+id/tv_usename"
+            android:layout_toStartOf="@+id/tv_usename"
+            android:layout_marginRight="-30dp"
+            android:layout_marginTop="4dp"
+            android:layout_centerInParent="true"
+            android:textColor="@color/white_gray" />
+
+        <TextView
+            android:text="Buscar Usuario"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginLeft="15dp"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="12dp"
+            android:id="@+id/textView6"
+            android:textAppearance="@style/TextAppearance.AppCompat.Button"
+            android:textColor="@color/white"
+            android:textSize="20sp" />
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/ic_window_close"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:id="@+id/bt_close"
+            android:background="@color/transparent"
+            android:padding="8dp" />
+    </RelativeLayout>
+
+</RelativeLayout>
